@@ -18,11 +18,11 @@ public class Tentativa2 {
                 sc.nextLine();
                 String nome = sc.nextLine();
                 boolean invalido = true;
-                String cpf;
+                String sobrenome;
                 do {
                     System.out.println("Digite seu sobrenome: ");
-                    cpf = sc.nextLine();
-                    if (cpf.length() < 3) {
+                    sobrenome = sc.nextLine();
+                    if (sobrenome.length() < 3) {
                         System.out.println("O sobrenome deve ter mais que 3 caracteres");
                         System.out.println("Digite novamente o sobrenome");
                     } else {

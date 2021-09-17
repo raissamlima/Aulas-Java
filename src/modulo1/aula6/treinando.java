@@ -9,7 +9,7 @@ class Scratch {
         System.out.printf("\t 1 -Serviços Gerais\n");
         System.out.printf("\t 2 -Vigia\n");
         System.out.printf("\t 3 -Recepcionista\n");
-        System.out.printf("\t 4 -Vendedor\n");
+        System.out.printf("\t 0 -Sair\n");
         System.out.printf("Escolha uma opção: \n");
 
         int op = sc.nextInt();
@@ -29,25 +29,44 @@ class Scratch {
                         invalido = false;
                     }
                 } while (invalido);
+                break;
 
-                op = sc.nextInt();
+            case 2:
+                invalido = true;
+                do {
+                    System.out.println("Digite o seu salário: ");
+                    float salarioVigia = sc.nextFloat();
+                    salarioVigia *= 1.3;
+                    System.out.printf("\t\n Seu salário teve um aumento de 30 porcento e passou a ser: %s!\n", salarioVigia);
+                    if (salarioVigia <= 0) {
+                        System.out.println("O salário não pode ser menor ou igual a ZERO");
+                        System.out.println("Digite novamente o salário");
+                    } else {
+                        invalido = false;
+                    }
+                } while (invalido);
+                break;
+
+            case 3:
+                invalido = true;
+                do {
+                    System.out.println("Digite o seu salário: ");
+                    float salarioVigia = sc.nextFloat();
+                    salarioVigia *= 1.0;
+                    System.out.printf("\t\n Seu salário teve um aumento de 10 porcento e passou a ser: %s!\n", salarioVigia);
+                    if (salarioVigia <= 0) {
+                        System.out.println("O salário não pode ser menor ou igual a ZERO");
+                        System.out.println("Digite novamente o salário");
+                    } else {
+                        invalido = false;
+                    }
+                } while (invalido);
+                break;
+
+            case 0:
+                System.out.printf("Sair");
                 sc.nextLine();
-                switch (op) {
-                    case 2:
-                        invalido = true;
-                        do {
-                            System.out.println("Digite o seu salário: ");
-                            float salarioVigia = sc.nextFloat();
-                            salarioVigia *= 1.3;
-                            System.out.printf("\t\n Seu salário teve um aumento de 30 porcento e passou a ser: %s!\n", salarioVigia);
-                            if (salarioVigia <= 0) {
-                                System.out.println("O salário não pode ser menor ou igual a ZERO");
-                                System.out.println("Digite novamente o salário");
-                            } else {
-                                invalido = false;
-                            }
-                        } while (invalido);
-                }
+                break;
         }
     }
 }

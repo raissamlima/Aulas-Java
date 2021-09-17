@@ -13,6 +13,7 @@ public class Tentativa2 {
 
         int op = sc.nextInt();
         switch (op) {
+
             case 1:
                 System.out.printf("Digite seu nome: ");
                 sc.nextLine();
@@ -49,13 +50,13 @@ public class Tentativa2 {
             case 2:
                 String nomelinguagem = sc.nextLine();
                 System.out.println("Selecione uma das aplicações ");
-                System.out.println("\t 1- Frontend");
-                System.out.println("\t 2- Backend");
+                System.out.println("\t 1- Front-end");
+                System.out.println("\t 2- Back-end");
                 System.out.println("\t 3- Mobile");
                 System.out.print("\tEscolha uma Opção: ");
                 int ab = Integer.parseInt(sc.nextLine());
                 while (ab<0 || ab>3){
-                    System.out.print("\tOpção invalida digite novamente : ");
+                    System.out.print("\tOpção invalida, digite novamente : ");
                     ab = Integer.parseInt(sc.nextLine());
                 }
                 System.out.printf("\t\n Linguagem cadastrada com sucesso");

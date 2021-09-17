@@ -21,7 +21,7 @@ class Scratch {
                     System.out.println("Digite o seu salário: ");
                     float salario = sc.nextFloat();
                     salario *= 1.5;
-                    System.out.printf("\t\n Seu salário teve um aumento de 50 porcento e passou a ser: %s reais!\n", salario);
+                    System.out.printf("\t\n Seu salário teve um aumento de 50 porcento e passou a ser: %s.2 reais!\n", salario);
                     if (salario <= 0) {
                         System.out.println("O salário não pode ser menor ou igual a ZERO");
                         System.out.println("Digite novamente o salário");
@@ -51,10 +51,10 @@ class Scratch {
                 invalido = true;
                 do {
                     System.out.println("Digite o seu salário: ");
-                    float salarioVigia = sc.nextFloat();
-                    salarioVigia *= 1.0;
-                    System.out.printf("\t\n Seu salário teve um aumento de 10 porcento e passou a ser: %s!\n", salarioVigia);
-                    if (salarioVigia <= 0) {
+                    float salarioRecepcionista = sc.nextFloat();
+                    salarioRecepcionista *= 1.0;
+                    System.out.printf("\t\n Seu salário teve um aumento de 10 porcento e passou a ser: %s!\n", salarioRecepcionista);
+                    if (salarioRecepcionista <= 0) {
                         System.out.println("O salário não pode ser menor ou igual a ZERO");
                         System.out.println("Digite novamente o salário");
                     } else {

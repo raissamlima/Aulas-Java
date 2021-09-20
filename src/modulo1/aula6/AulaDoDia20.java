@@ -13,7 +13,7 @@ class ExemploWhile {
         System.out.println("Digite seu sobrenome: ");
         String sobrenome = sc.nextLine();
         while (contador <11){
-        System.out.println("Repetição nr: " + contador);
+        System.out.printf("%s %s. \n",nome, sobrenome);
         contador++;
         }
     }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class ForCadastroAulaDia17 {
     public static void main (String[] args) {
-        for(int cont = 0; cont < 4; cont++){
+        for(int cont = 1; cont < 5; cont++){
             Scanner sc = new Scanner(System.in);
             System.out.println("Digite o nome: ");
             String nome = sc.nextLine();
